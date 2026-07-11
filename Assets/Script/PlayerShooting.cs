@@ -1,0 +1,104 @@
+using UnityEngine;
+
+public class PlayerShooting : MonoBehaviour
+{
+    [Header("Cài đặt bắn súng")]
+    [SerializeField] private GameObject bulletPrefab; // Kéo Prefab viên đạn vào đây
+    [SerializeField] private Transform firePoint;     // Vị trí nòng súng (FirePoint)
+    [SerializeField] private float bulletSpeed = 15f;
+
+    [Header("Cấu hình Cúi Bắn")]
+    [SerializeField] private float crouchFirePointYOffset = -0.4f; // Khoảng cách hạ thấp nòng súng (Y) khi cúi
+
+    [Header("Gắn súng cũ để ẩn đi")]
+    [SerializeField] private GameObject oldGunObject; // Kéo khẩu súng cũ trên người Rex vào đây
+
+    // Biến lưu trữ ID súng hiện tại (0: Súng thường, 1: Súng mới cấp cao)
+    private int currentGunID = 0;
+    private Animator anim;
+    private Rigidbody2D rb; // Để đóng băng tốc độ khi đang cúi bắn
+
+    private Vector3 originalFirePointPos; // Vị trí nòng súng lúc đứng
+    private Vector3 crouchFirePointPos;   // Vị trí nòng súng lúc cúi
+
+    void Start()
+    {
+        anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+
+        // Lưu lại vị trí nòng súng mặc định và tính toán vị trí nòng súng khi ngồi
+        if (firePoint != null)
+        {
+            originalFirePointPos = firePoint.localPosition;
+            crouchFirePointPos = originalFirePointPos + new Vector3(0f, crouchFirePointYOffset, 0f);
+        }
+    }
+
+    void Update()
+    {
+        // 1. LOGIC XỬ LÝ CÚI BẤN
+        // Kiểm tra nếu người chơi GIỮ phím S hoặc phím Mũi tên xuống
+        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+        {
+            if (anim != null) anim.SetBool("isCrouching", true); // Kích hoạt animation Rex_Crouch_Shoot
+
+            if (firePoint != null) firePoint.localPosition = crouchFirePointPos; // Hạ thấp nòng súng xuống
+
+            // Đóng băng vận tốc trục X để Rex không bị trượt đi nếu lỡ tay bấm nút chạy khi đang ngồi
+            if (rb != null) rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+        }
+        else
+        {
+            if (anim != null) anim.SetBool("isCrouching", false); // Quay về Animation đứng bình thường
+
+            if (firePoint != null) firePoint.localPosition = originalFirePointPos; // Trả nòng súng về vị trí cũ
+        }
+
+        // 2. LOGIC BẮN ĐẠN
+        if (Input.GetMouseButtonDown(0)) // Click chuột trái để bắn (hoạt động ở cả tư thế đứng/ngồi)
+        {
+            Shoot();
+        }
+    }
+
+    // Hàm nhận diện khi nhặt được súng mới
+    public void ChangeWeapon(int newGunID)
+    {
+        currentGunID = newGunID;
+
+        if (anim != null)
+        {
+            anim.SetInteger("gunID", newGunID); // Đổi Animation cầm súng mới
+        }
+
+        // --- ĐOẠN CODE ĐỂ ẨN SÚNG CŨ KHI NHẶT SÚNG MỚI ---
+        if (newGunID == 1 && oldGunObject != null)
+        {
+            oldGunObject.SetActive(false); // Tắt hẳn khẩu súng cũ đi, biến mất hoàn toàn!
+        }
+        // -------------------------------------------------
+
+        Debug.Log("Rex đã nâng cấp lên súng mới! Đã ẩn súng cũ.");
+    }
+
+    void Shoot()
+    {
+        if (bulletPrefab == null || firePoint == null) return;
+
+        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, Quaternion.identity);
+        float directionX = transform.localScale.x < 0 ? -1f : 1f;
+
+        // Nếu đang cầm súng mới (ID = 1) thì đạn bay siêu nhanh (gấp đôi tốc độ)
+        float finalSpeed = (currentGunID == 1) ? bulletSpeed * 2f : bulletSpeed;
+
+        Rigidbody2D bulletRb = bullet.GetComponent<Rigidbody2D>();
+        if (bulletRb != null)
+        {
+            bulletRb.linearVelocity = new Vector2(finalSpeed * directionX, 0f);
+        }
+
+        Vector3 bulletScale = bullet.transform.localScale;
+        bulletScale.x = Mathf.Abs(bulletScale.x) * directionX;
+        bullet.transform.localScale = bulletScale;
+    }
+}

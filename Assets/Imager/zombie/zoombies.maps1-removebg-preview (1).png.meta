@@ -1,0 +1,307 @@
+fileFormatVersion: 2
+guid: f9bb7145b1de3c14f92bba800d37bfbc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3949784739994911931
+    second: zoombies.maps1-removebg-preview (1)_0
+  - first:
+      213: 354916435135808248
+    second: zoombies.maps1-removebg-preview (1)_1
+  - first:
+      213: 1187367748787331913
+    second: zoombies.maps1-removebg-preview (1)_2
+  - first:
+      213: -6401517103055281639
+    second: zoombies.maps1-removebg-preview (1)_3
+  - first:
+      213: -5337081705078222335
+    second: zoombies.maps1-removebg-preview (1)_4
+  - first:
+      213: -2507736926868889048
+    second: zoombies.maps1-removebg-preview (1)_5
+  - first:
+      213: 6185807352665583398
+    second: zoombies.maps1-removebg-preview (1)_6
+  - first:
+      213: 1336908396603396828
+    second: zoombies.maps1-removebg-preview (1)_7
+  - first:
+      213: 7984486412129682885
+    second: zoombies.maps1-removebg-preview (1)_8
+  - first:
+      213: 2201213411595968869
+    second: zoombies.maps1-removebg-preview (1)_9
+  - first:
+      213: -746042344218947892
+    second: zoombies.maps1-removebg-preview (1)_10
+  - first:
+      213: -1432421797876310524
+    second: zoombies.maps1-removebg-preview (1)_11
+  - first:
+      213: -3836014859399046487
+    second: zoombies.maps1-removebg-preview (1)_12
+  - first:
+      213: 2362294257889065484
+    second: zoombies.maps1-removebg-preview (1)_13
+  - first:
+      213: 380146939251731827
+    second: zoombies.maps1-removebg-preview (1)_14
+  - first:
+      213: 7534312942780925865
+    second: zoombies.maps1-removebg-preview (1)_15
+  - first:
+      213: -6676443996965696006
+    second: zoombies.maps1-removebg-preview (1)_16
+  - first:
+      213: -5055809618620830361
+    second: zoombies.maps1-removebg-preview (1)_17
+  - first:
+      213: 3930024254129017707
+    second: zoombies.maps1-removebg-preview (1)_18
+  - first:
+      213: -916734044473552695
+    second: zoombies.maps1-removebg-preview (1)_19
+  - first:
+      213: -4350937523292755819
+    second: zoombies.maps1-removebg-preview (1)_20
+  - first:
+      213: 1819827329657427772
+    second: zoombies.maps1-removebg-preview (1)_21
+  - first:
+      213: 4889054738822871895
+    second: zoombies.maps1-removebg-preview (1)_22
+  - first:
+      213: -3532667307295619144
+    second: zoombies.maps1-removebg-preview (1)_23
+  - first:
+      213: 8855687701151070799
+    second: zoombies.maps1-removebg-preview (1)_24
+  - first:
+      213: 2330196494303003702
+    second: zoombies.maps1-removebg-preview (1)_25
+  - first:
+      213: -3926659155450304280
+    second: zoombies.maps1-removebg-preview (1)_26
+  - first:
+      213: 5540989153497881211
+    second: zoombies.maps1-removebg-preview (1)_27
+  - first:
+      213: -4248608924336384594
+    second: zoombies.maps1-removebg-preview (1)_28
+  - first:
+      213: 887076592162743771
+    second: zoombies.maps1-removebg-preview (1)_29
+  - first:
+      213: 3668664856956950369
+    second: zoombies.maps1-removebg-preview (1)_30
+  - first:
+      213: -7931953563416628222
+    second: zoombies.maps1-removebg-preview (1)_31
+  - first:
+      213: 1678574837158058544
+    second: zoombies.maps1-removebg-preview (1)_32
+  - first:
+      213: -4582207308625870073
+    second: zoombies.maps1-removebg-preview (1)_33
+  - first:
+      213: 1086670832099677389
+    second: zoombies.maps1-removebg-preview (1)_34
+  - first:
+      213: 6489607647778153570
+    second: zoombies.maps1-removebg-preview (1)_35
+  - first:
+      213: -5763235429058555710
+    second: zoombies.maps1-removebg-preview (1)_36
+  - first:
+      213: -2023224415203340327
+    second: zoombies.maps1-removebg-preview (1)_37
+  - first:
+      213: -7656885991024471152
+    second: zoombies.maps1-removebg-preview (1)_38
+  - first:
+      213: -4537203423866080839
+    second: zoombies.maps1-removebg-preview (1)_39
+  - first:
+      213: 2683957218071157634
+    second: zoombies.maps1-removebg-preview (1)_40
+  - first:
+      213: -6948407666358759519
+    second: zoombies.maps1-removebg-preview (1)_41
+  - first:
+      213: 8553478852971336645
+    second: zoombies.maps1-removebg-preview (1)_42
+  - first:
+      213: -1868275905838809334
+    second: zoombies.maps1-removebg-preview (1)_43
+  - first:
+      213: -8474333244677861216
+    second: zoombies.maps1-removebg-preview (1)_44
+  - first:
+      213: -9110159267572757612
+    second: zoombies.maps1-removebg-preview (1)_45
+  - first:
+      213: 1892150725180141786
+    second: zoombies.maps1-removebg-preview (1)_46
+  - first:
+      213: -9209632396254117150
+    second: zoombies.maps1-removebg-preview (1)_47
+  - first:
+      213: 9059465484499353170
+    second: zoombies.maps1-removebg-preview (1)_48
+  - first:
+      213: -3689555901843473815
+    second: zoombies.maps1-removebg-preview (1)_49
+  - first:
+      213: -2934638195600348223
+    second: zoombies.maps1-removebg-preview (1)_50
+  - first:
+      213: 229845493365185250
+    second: zoombies.maps1-removebg-preview (1)_51
+  - first:
+      213: -6438814514219479884
+    second: zoombies.maps1-removebg-preview (1)_52
+  - first:
+      213: -1837772062717441145
+    second: zoombies.maps1-removebg-preview (1)_53
+  - first:
+      213: -331725906610484755
+    second: zoombies.maps1-removebg-preview (1)_54
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: zoombies.maps1-removebg-preview (1)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 612
+        height: 408
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b3851b4bb8f29c0800000000000000
+      internalID: -3949784739994911931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b97fde80f0342824e8c020e52a86df61
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":612.0,"y":408.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      zoombies.maps1-removebg-preview (1)_0: -3949784739994911931
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

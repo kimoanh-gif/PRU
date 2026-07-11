@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Rex_AK_Override
+  m_Controller: {fileID: 9100000, guid: 6c1a796d6dc144e47b6c341ecf0d0fc6, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: c8b21a670b2da8f4b974b45ab40575d3, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a3c805ddf5741074381d9e18c4dc2fef, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 9e881f4e1cc61d8498099e1268359806, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4b81c9efd6d80534da174b8b0926a9ca, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: be99e8e287aaf0c45a91da0f9fc86298, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a41d4fb34e01a594aa0979d693dd5a0e, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 8190ba5d7d9cd924ea22a23704bf155c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 43601475ec8f6df4aa48334d0215a532, type: 2}
