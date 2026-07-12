@@ -57,6 +57,7 @@
     <Compile Include="Assets\Script\GunPickup.cs" />
     <Compile Include="Assets\Script\EnemyAttack.cs" />
     <Compile Include="Assets\Script\GameStageManager.cs" />
+    <Compile Include="Assets\Script\RexDialogue.cs" />
     <Compile Include="Assets\Script\WeaponPickup.cs" />
     <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Script\Bullet.cs" />
