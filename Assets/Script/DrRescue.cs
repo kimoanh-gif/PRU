@@ -4,6 +4,7 @@ using UnityEngine;
 public class DrRescue : MonoBehaviour
 {
     private bool isFree = false;
+    private bool canFollow = false; // Trạng thái kiểm soát: Chỉ chạy sau khi đối thoại xong!
     private float originalScaleX;
 
     private SpriteRenderer spriteRenderer;
@@ -75,7 +76,8 @@ public class DrRescue : MonoBehaviour
 
     void LateUpdate()
     {
-        if (isFree && player != null)
+        // THAY ĐỔI QUAN TRỌNG: Phải tự do VÀ đã nói chuyện xong (canFollow = true) mới di chuyển!
+        if (isFree && canFollow && player != null)
         {
             float distanceX = Mathf.Abs(transform.position.x - player.position.x);
 
@@ -113,16 +115,26 @@ public class DrRescue : MonoBehaviour
 
         transform.SetParent(null);
 
+        // =========================================================================
+        // 🔊 LIÊN KẾT GAMEMANAGER: Báo cho GameManager biết đã cứu Tiến sĩ thành công!
+        // =========================================================================
+        if (GameManager.instance != null)
+        {
+            GameManager.instance.SetDrRescued();
+        }
+
         // 1. Tắt tiếng kêu cứu ngay lập tức
         if (audioSource.isPlaying)
         {
             audioSource.Stop();
         }
 
-        // 2. Chạy chuỗi hội thoại kịch tính
+        // =========================================================================
+        // 🎬 SỬA LỖI: Kích hoạt chuỗi hội thoại điện ảnh và giải phóng chuyển động!
+        // =========================================================================
         StartCoroutine(PlayDialogueSequence());
 
-        // 3. Tắt vật lý để chạy theo Rex mượt mà
+        // 2. Dọn dẹp vật lý của lồng kính cũ để Tiến sĩ chạy mượt mà xuyên qua bệ gạch
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         if (rb != null) Destroy(rb);
 
@@ -131,7 +143,7 @@ public class DrRescue : MonoBehaviour
 
         if (spriteRenderer != null)
         {
-            spriteRenderer.sortingOrder = 5;
+            spriteRenderer.sortingOrder = 5; // Đưa Tiến sĩ lên lớp hiển thị phía trước
         }
     }
 
@@ -160,6 +172,8 @@ public class DrRescue : MonoBehaviour
             yield return new WaitForSeconds(drThanksVoice.length);
         }
 
+        // Phân đoạn 3: Cho phép Tiến sĩ bắt đầu bám đuôi Rex sau khi đã nói xong!
         Debug.Log("🏃 Tiến sĩ bắt đầu bám đuôi Rex!");
+        canFollow = true;
     }
 }

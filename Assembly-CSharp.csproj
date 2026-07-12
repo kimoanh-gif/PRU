@@ -52,6 +52,7 @@
     <Compile Include="Assets\Script\PlayerShooting.cs" />
     <Compile Include="Assets\Script\DrRoomManager.cs" />
     <Compile Include="Assets\Script\EnemyPatrol.cs" />
+    <Compile Include="Assets\Script\BossFlyingAI.cs" />
     <Compile Include="Assets\Script\EnemyHealth.cs" />
     <Compile Include="Assets\Script\ZombieAttackController.cs" />
     <Compile Include="Assets\Script\GunPickup.cs" />
@@ -59,6 +60,8 @@
     <Compile Include="Assets\Script\GameStageManager.cs" />
     <Compile Include="Assets\Script\RexDialogue.cs" />
     <Compile Include="Assets\Script\WeaponPickup.cs" />
+    <Compile Include="Assets\Script\ExitGateTrigger.cs" />
+    <Compile Include="Assets\Script\IdleBobbing.cs" />
     <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Script\Bullet.cs" />
     <Compile Include="Assets\Script\DrRescue.cs" />

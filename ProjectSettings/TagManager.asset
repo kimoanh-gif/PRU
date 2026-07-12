@@ -8,6 +8,7 @@ TagManager:
   - DrRoom
   - ChuongTim
   - GunItem
+  - Bullet
   layers:
   - Default
   - TransparentFX
