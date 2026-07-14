@@ -28,7 +28,7 @@ AnimatorState:
   m_TimeParameter: 
 --- !u!1107 &-4370611710771168393
 AnimatorStateMachine:
-  serializedVersion: 6
+  serializedVersion: 7
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -52,32 +52,32 @@ AnimatorStateMachine:
     m_Position: {x: 540, y: -190, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -4654101155722807907}
-    m_Position: {x: 620, y: 10, z: 0}
+    m_Position: {x: 800, y: -170, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -2975323699126660013}
-    m_Position: {x: 550, y: -80, z: 0}
+    m_Position: {x: 540, y: -120, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 322861457592953455}
-    m_Position: {x: 585, y: -15, z: 0}
+    m_Position: {x: 790, y: -90, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -2252760641340458089}
-    m_Position: {x: 620, y: 50, z: 0}
+    m_Position: {x: 590, y: 10, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102992553997205472}
-    m_Position: {x: 655, y: 115, z: 0}
+    m_Position: {x: 850, y: 20, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -2242854740807816390}
-    m_Position: {x: 690, y: 180, z: 0}
+    m_Position: {x: 670, y: 190, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1340036932668721627}
-    m_Position: {x: 725, y: 245, z: 0}
+    m_Position: {x: 920, y: 200, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: -1333787493506322706}
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: -20, y: 210, z: 0}
+  m_AnyStatePosition: {x: -30, y: 220, z: 0}
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
@@ -321,7 +321,7 @@ AnimatorController:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Rex
-  serializedVersion: 5
+  serializedVersion: 6
   m_AnimatorParameters:
   - m_Name: isRunning
     m_Type: 4
@@ -360,6 +360,7 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
+  m_EvaluateTransitionsOnStart: 0
 --- !u!1102 &322861457592953455
 AnimatorState:
   serializedVersion: 6
