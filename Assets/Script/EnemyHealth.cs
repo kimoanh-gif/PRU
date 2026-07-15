@@ -48,6 +48,6 @@ public class EnemyHealth : MonoBehaviour
             Instantiate(swordPrefab, transform.position, Quaternion.identity);
         }
 
-        Destroy(gameObject);
+        Destroy(gameObject, 1.5f);
     }
 }
